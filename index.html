@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Builder</h1>
+    </header>
+    
+    <div id="project-dashboard">
+        <h2>Your Projects</h2>
+        <button id="new-project-btn">New Project</button>
+        <ul id="project-list">
+            <!-- Projects will be listed here -->
+        </ul>
+    </div>
+
+    <div id="project-editor" class="hidden">
+        <button id="back-to-dashboard">Back to Dashboard</button>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Blocks</h2>
+                <div class="block" draggable="true" data-html="<h1>Title</h1>">Title</div>
+                <div class="block" draggable="true" data-html="<p>Paragraph</p>">Paragraph</div>
+                <div class="block" draggable="true" data-html="<button>Button</button>">Button</div>
+                <div class="block" draggable="true" data-html='<input type="text" placeholder="EditText">' draggable="true">EditText</div>
+            </div>
+            <div class="canvas" id="canvas">
+                <h2>Design Area</h2>
+                <div id="drop-area"></div>
+            </div>
+        </div>
+        <textarea id="generated-code" rows="10" cols="50" readonly></textarea>
+        <button id="save-project-btn">Save Project</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

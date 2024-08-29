@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#project-dashboard, #project-editor {
+    padding: 20px;
+}
+
+#new-project-btn, #save-project-btn, #back-to-dashboard {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#project-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust to fill the remaining viewport height */
+}
+
+.sidebar {
+    width: 150px; /* Reduced width */
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.block {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: grab;
+}
+
+.canvas {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+#drop-area {
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#generated-code {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
